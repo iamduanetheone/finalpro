@@ -1,0 +1,19 @@
+.git
+.github
+node_modules
+.DS_Store
+*.log
+
+# Environment files should be set in Vercel UI, not committed
+.env
+.env.*
+# Keep next.config.js (or .ts) as Vercel might need it for build-time env vars
+# !next.config.js 
+# !next.config.ts
+
+# Docker-related files (Vercel uses its own build system for Next.js)
+Dockerfile
+docker-compose.yml
+
+# Local development files or large assets not needed for production
+# e.g., /src/some-large-dev-assets/ 

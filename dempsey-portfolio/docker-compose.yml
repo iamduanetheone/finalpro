@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      # Mounts the current directory into the container at /app
+      # This allows for hot-reloading on code changes during development.
+      # For production, you might remove this or use a more specific volume strategy.
+      - .:/app
+      # Prevent node_modules from being overwritten by the host's node_modules
+      # This is important if your host OS is different from the container's OS (e.g., macOS host, Linux container)
+      - /app/node_modules
+      # For Next.js, we also want to ensure the .next directory in the container is used, not the host's.
+      - /app/.next 
+    environment:
+      NODE_ENV: development
+      # You can add other environment variables here
+      # NEXT_PUBLIC_SOME_VARIABLE: some_value
+    # command: npm run dev # Use this if you want to run in development mode inside Docker 
