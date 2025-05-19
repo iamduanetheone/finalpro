@@ -1,6 +1,4 @@
 {
   "version": 2,
-  "rootDirectory": "dempsey-portfolio",
-  "buildCommand": "cd dempsey-portfolio && npm run build",
-  "outputDirectory": "dempsey-portfolio/.next"
+  "rootDirectory": "dempsey-portfolio"
 } 
