@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Block access to admin/CMS areas
+Disallow: /studio/
+
+# Sitemap location
+Sitemap: https://www.duanecopywriter.com/sitemap.xml 
