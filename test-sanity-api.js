@@ -4,7 +4,7 @@ const { createClient } = require('@sanity/client');
 
 // Create a client with explicit configuration
 const sanityClient = createClient({
-  projectId: 'h6zht0xd',
+  projectId: 'v20paafs',
   dataset: 'production',
   apiVersion: '2021-06-07',
   useCdn: false,
@@ -15,7 +15,7 @@ const sanityClient = createClient({
 async function testSanityConnection() {
   console.log('Testing Sanity API connectivity...');
   console.log('Using configuration:');
-  console.log('- Project ID:', 'h6zht0xd');
+  console.log('- Project ID:', 'v20paafs');
   console.log('- Dataset:', 'production');
   console.log('- API Version:', '2021-06-07');
   
@@ -44,7 +44,7 @@ async function testSanityConnection() {
       console.log('User:', user);
     } catch (error) {
       console.log('❌ Authentication failed:', error.message);
-      console.log('You may need to create an API token at https://www.sanity.io/manage/project/h6zht0xd');
+      console.log('You may need to create an API token at https://www.sanity.io/manage/project/v20paafs');
     }
   } catch (error) {
     console.error('❌ Error connecting to Sanity:', error.message);

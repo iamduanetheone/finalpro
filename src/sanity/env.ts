@@ -8,7 +8,7 @@ export const apiVersion = '2021-06-07'
 export const dataset = 'production'
 
 // Project ID - v20paafs is the correct project ID
-export const projectId = 'h6zht0xd'
+export const projectId = 'v20paafs'
 
 function assertValue<T>(v: T | undefined, errorMessage: string): T {
   if (v === undefined) {

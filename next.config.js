@@ -44,31 +44,31 @@ const nextConfig /*: NextConfig*/ = { // Type annotation commented out
   async headers() {
     // Create secure headers with or without HTTPS redirect based on environment
     const secureHeadersConfig = {
-      contentSecurityPolicy: {
-        directives: {
+          contentSecurityPolicy: {
+            directives: {
           defaultSrc: ["'self'", "https:", "vercel.app", "vercel.com"],
           styleSrc: ["'self'", "'unsafe-inline'", "https:", "vercel.app", "vercel.com"],
           scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://api.web3forms.com", "https:", "vercel.app", "vercel.com"],
-          imgSrc: ["'self'", "data:", "https:", "blob:"],
-          connectSrc: ["'self'", "https://api.web3forms.com", "https://cdn.sanity.io", "https://h6zht0xd.api.sanity.io", "https:", "vercel.app", "vercel.com", "wss:", "ws:"],
-          fontSrc: ["'self'", "https:", "data:"],
-          formAction: ["'self'", "https://api.web3forms.com"],
+              imgSrc: ["'self'", "data:", "https:", "blob:"],
+          connectSrc: ["'self'", "https://api.web3forms.com", "https://cdn.sanity.io", "https://v20paafs.api.sanity.io", "https:", "vercel.app", "vercel.com", "wss:", "ws:"],
+              fontSrc: ["'self'", "https:", "data:"],
+              formAction: ["'self'", "https://api.web3forms.com"],
           scriptSrcElem: ["'self'", "'unsafe-inline'", "https:", "vercel.app", "vercel.com"],
           scriptSrcAttr: ["'self'", "'unsafe-inline'"],
           baseUri: ["'self'"],
           frameAncestors: ["'self'"],
-        },
-      },
-      referrerPolicy: 'strict-origin-when-cross-origin',
-      xssProtection: 'sanitize',
+            },
+          },
+          referrerPolicy: 'strict-origin-when-cross-origin',
+          xssProtection: 'sanitize',
       frameGuard: 'deny',
     };
 
     // Only add HTTPS redirect in production
     if (!isDev) {
       secureHeadersConfig.forceHTTPSRedirect = [
-        true,
-        { maxAge: 60 * 60 * 24 * 360, includeSubDomains: true },
+            true,
+            { maxAge: 60 * 60 * 24 * 360, includeSubDomains: true },
       ];
     }
 
@@ -89,7 +89,7 @@ const nextConfig /*: NextConfig*/ = { // Type annotation commented out
             key: 'Access-Control-Allow-Origin',
             // IMPORTANT: Replace with your specific Sanity Studio domain in production
             // e.g., 'https://your-studio-domain.sanity.studio' or your custom domain for the studio
-            value: '*', // Allow all origins for now, update this with your specific domain in production
+            value: 'https://www.iamduanecarter.com',
           },
           {
             key: 'Access-Control-Allow-Methods',

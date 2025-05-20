@@ -42,7 +42,7 @@ This document provides instructions for deploying this Next.js project to Vercel
    - Output Directory: `.next`
 
 5. Configure environment variables in the Vercel dashboard:
-   - `NEXT_PUBLIC_SANITY_PROJECT_ID`: `h6zht0xd`
+   - `NEXT_PUBLIC_SANITY_PROJECT_ID`: `v20paafs`
    - `NEXT_PUBLIC_SANITY_DATASET`: `production`
    - `NEXT_PUBLIC_SANITY_API_VERSION`: `2021-06-07`
 
