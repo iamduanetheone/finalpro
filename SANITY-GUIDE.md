@@ -8,7 +8,7 @@ There are a few ways to access and manage your Sanity content:
 
 The most reliable way to manage your content is through the Sanity.io web interface:
 
-1. Go to: https://www.sanity.io/manage/project/v20paafs
+1. Go to: https://www.sanity.io/manage/project/h6zht0xd
 2. Log in with your credentials
 3. Select the "Content" tab to edit your content
 
@@ -48,7 +48,7 @@ If you're experiencing issues with the Sanity Studio integration in Next.js, try
    ```bash
    npx sanity projects list
    ```
-   Verify that you're using `v20paafs` as your project ID and `production` as your dataset.
+   Verify that you're using `h6zht0xd` as your project ID and `production` as your dataset.
 
 3. If all else fails, use the Sanity.io web interface directly.
 
@@ -58,7 +58,7 @@ When fetching content from Sanity in your Next.js app, make sure to use these se
 
 ```javascript
 const client = createClient({
-  projectId: "v20paafs",
+  projectId: "h6zht0xd",
   dataset: "production",
   apiVersion: "2021-06-07",
   useCdn: true,

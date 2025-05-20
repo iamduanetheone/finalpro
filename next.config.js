@@ -50,7 +50,7 @@ const nextConfig /*: NextConfig*/ = { // Type annotation commented out
           styleSrc: ["'self'", "'unsafe-inline'", "https:", "vercel.app", "vercel.com"],
           scriptSrc: ["'self'", "'unsafe-inline'", "'unsafe-eval'", "https://api.web3forms.com", "https:", "vercel.app", "vercel.com"],
               imgSrc: ["'self'", "data:", "https:", "blob:"],
-          connectSrc: ["'self'", "https://api.web3forms.com", "https://cdn.sanity.io", "https://v20paafs.api.sanity.io", "https:", "vercel.app", "vercel.com", "wss:", "ws:"],
+          connectSrc: ["'self'", "https://api.web3forms.com", "https://cdn.sanity.io", "https://h6zht0xd.api.sanity.io", "https:", "vercel.app", "vercel.com", "wss:", "ws:"],
               fontSrc: ["'self'", "https:", "data:"],
               formAction: ["'self'", "https://api.web3forms.com"],
           scriptSrcElem: ["'self'", "'unsafe-inline'", "https:", "vercel.app", "vercel.com"],
